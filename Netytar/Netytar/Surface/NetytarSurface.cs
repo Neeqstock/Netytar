@@ -538,7 +538,7 @@ namespace Netytar
 
                 BitmapImage bitImage = new BitmapImage();
                 bitImage.BeginInit();
-                bitImage.UriSource = new Uri(@"C:\Spark3.gif");
+                bitImage.UriSource = new Uri("pack://application:,,,/Images/Sparks/Spark3.gif");
                 bitImage.EndInit();
                 ImageBehavior.SetAnimatedSource(image, bitImage);
                 ImageBehavior.SetRepeatBehavior(image, new RepeatBehavior(1));

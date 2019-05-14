@@ -50,7 +50,7 @@ namespace Netytar.DMIbox
 
             NetytarRack.DMIBox.SensorReader.Behaviors.Add(new SBbreathSensor(15, 20, 1.5f));
 
-            NetytarRack.DMIBox.EyeXModule.EyePositionBehaviors.Add(new EPBdynamicsBehavior(15, 20, 1.5f));
+            NetytarRack.DMIBox.EyeXModule.EyePositionBehaviors.Add(new EPBdynamicsBehavior(20, 25, 1.5f));
 
             // SURFACE
             IDimension dimension = new DimensionStretch();

@@ -1,30 +1,4 @@
 Device
- DeviceName: \\?\HID#Tobii#8&842c075&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
- DeviceType: HID
- DeviceHandle: 100B5
- Name: Tobii Eye Tracker HID
-
-DeviceInfo
- Size: 32
- Type: 2
-
-DeviceInfoKeyboard
- Type: 8452
- SubType: 284
- KeyboardMode: 257
- NumberOfFunctionKeys: 65554
- NumberOfIndicators 0
- NumberOfKeysTotal: 0
-
-HidInfo
- VendorID: 8452
- ProductID: 284
- VersionNumber: 257
- UsagePage: 18
- Usage: 1
-
-=========================================================================================================
-Device
  DeviceName: \\?\HID#ATK4002#3&1c78ff7d&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
  DeviceType: HID
  DeviceHandle: 20045

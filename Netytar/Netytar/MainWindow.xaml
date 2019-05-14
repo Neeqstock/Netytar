@@ -221,13 +221,6 @@
                             </Button.Background>
                         </Button>
                     </Border>
-                    <Border Background="Black" Grid.Column="1" BorderThickness="2" BorderBrush="WhiteSmoke" Width="Auto" Height="60" Margin="1,1,1,1">
-                        <Button x:Name="btnFlasher" Foreground="White" Content="~"  Width="Auto" Height="Auto" Margin="0,1,1,0" FontFamily="Webdings" FontSize="30" IsCancel="True" Click="btnTestClick">
-                            <Button.Background>
-                                <ImageBrush ImageSource="Images/Backgrounds/DarkWood.png" TileMode="Tile" Stretch="None"></ImageBrush>
-                            </Button.Background>
-                        </Button>
-                    </Border>
                     <Border Background="Black" Grid.Column="2" BorderThickness="2" BorderBrush="WhiteSmoke" Width="Auto" Height="60" Margin="1,1,1,1">
                         <Button x:Name="btnFFBTest" Foreground="White" Content="@"  Width="Auto" Height="Auto" Margin="0,1,1,0" Click="BtnFFBTest_Click" FontFamily="Webdings" FontSize="30" IsCancel="True" >
                             <Button.Background>
@@ -237,14 +230,28 @@
                     </Border>
                 </Grid-->
                 
+                
                 <!-- CALIBRATOR FOR EYECONTROL -->
-                <Border Grid.Row="7" BorderThickness="2" BorderBrush="WhiteSmoke" Width="Auto" Height="Auto" Margin="5,5,5,5">
-                    <Button Name="btnCalibrateEyePos" Foreground="White" Content="Calibrate" Width="Auto" Height="Auto" FontFamily="Magneto" FontSize="22" IsCancel="True" MouseEnter="btnCalibrateEyePos_MouseEnter" MouseLeave="btnCalibrateEyePos_MouseLeave">
-                        <Button.Background>
-                            <SolidColorBrush Color="Black"></SolidColorBrush>
-                        </Button.Background>
-                    </Button>
-                </Border>
+                <Grid Grid.Row="7" Margin="5,1,5,1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Border Grid.Column="0" BorderThickness="2" BorderBrush="WhiteSmoke" Width="Auto" Height="Auto" >
+                        <Button Name="btnCalibrateEyePos" Foreground="White" Content="Calibrate" Width="Auto" Height="Auto" FontFamily="Magneto" FontSize="22" IsCancel="True" MouseEnter="btnCalibrateEyePos_MouseEnter" MouseLeave="btnCalibrateEyePos_MouseLeave">
+                            <Button.Background>
+                                <SolidColorBrush Color="Black"></SolidColorBrush>
+                            </Button.Background>
+                        </Button>
+                    </Border>
+                    <Border Background="Black" Grid.Column="1" BorderThickness="2" BorderBrush="WhiteSmoke" Width="Auto" Height="60" Margin="1,1,1,1">
+                        <Button x:Name="btnFlasher" Foreground="White" Content="~"  Width="Auto" Height="Auto" Margin="0,1,1,0" FontFamily="Webdings" FontSize="30" IsCancel="True" Click="btnTestClick">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Images/Backgrounds/DarkWood.png" TileMode="Tile" Stretch="None"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+                    </Border>
+                </Grid>
 
             </Grid>
         </Border>
