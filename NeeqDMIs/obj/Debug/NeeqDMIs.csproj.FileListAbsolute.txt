@@ -11,15 +11,6 @@ C:\root_X542U\Frammenti software\Visual Studio Projects\NeeqDMIs\bin\Debug\NAudi
 C:\root_X542U\Frammenti software\Visual Studio Projects\NeeqDMIs\bin\Debug\NLog.dll
 C:\root_X542U\Frammenti software\Visual Studio Projects\NeeqDMIs\bin\Debug\RawInput.dll
 C:\root_X542U\Frammenti software\Visual Studio Projects\NeeqDMIs\bin\Debug\RJCP.SerialPortStream.dll
-C:\root_X542U\Frammenti software\Visual Studio Projects\NeeqDMIs\bin\Debug\System.Collections.Specialized.dll
-C:\root_X542U\Frammenti software\Visual Studio Projects\NeeqDMIs\bin\Debug\System.Diagnostics.FileVersionInfo.dll
-C:\root_X542U\Frammenti software\Visual Studio Projects\NeeqDMIs\bin\Debug\System.Diagnostics.TraceSource.dll
-C:\root_X542U\Frammenti software\Visual Studio Projects\NeeqDMIs\bin\Debug\System.IO.FileSystem.dll
-C:\root_X542U\Frammenti software\Visual Studio Projects\NeeqDMIs\bin\Debug\System.IO.FileSystem.Primitives.dll
-C:\root_X542U\Frammenti software\Visual Studio Projects\NeeqDMIs\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
-C:\root_X542U\Frammenti software\Visual Studio Projects\NeeqDMIs\bin\Debug\System.Threading.Overlapped.dll
-C:\root_X542U\Frammenti software\Visual Studio Projects\NeeqDMIs\bin\Debug\System.Threading.Thread.dll
-C:\root_X542U\Frammenti software\Visual Studio Projects\NeeqDMIs\bin\Debug\System.Threading.ThreadPool.dll
 C:\root_X542U\Frammenti software\Visual Studio Projects\NeeqDMIs\bin\Debug\Tobii.EyeX.Client.Net20.dll
 C:\root_X542U\Frammenti software\Visual Studio Projects\NeeqDMIs\bin\Debug\XInput.Wrapper.dll
 C:\root_X542U\Frammenti software\Visual Studio Projects\NeeqDMIs\bin\Debug\XInputDotNetPure.dll
@@ -33,3 +24,5 @@ C:\root_X542U\Frammenti software\Visual Studio Projects\NeeqDMIs\obj\Debug\NeeqD
 C:\root_X542U\Frammenti software\Visual Studio Projects\NeeqDMIs\obj\Debug\NeeqDMIs.csproj.CopyComplete
 C:\root_X542U\Frammenti software\Visual Studio Projects\NeeqDMIs\obj\Debug\NeeqDMIs.dll
 C:\root_X542U\Frammenti software\Visual Studio Projects\NeeqDMIs\obj\Debug\NeeqDMIs.pdb
+C:\root_X542U\Frammenti software\Visual Studio Projects\NeeqDMIs\bin\Debug\System.Security.AccessControl.dll
+C:\root_X542U\Frammenti software\Visual Studio Projects\NeeqDMIs\bin\Debug\System.Security.Principal.Windows.dll

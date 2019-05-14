@@ -194,16 +194,19 @@
                 </Grid>
 
                 <!-- HEAD POSITION LABELS -->
-                <Grid Grid.Row="6" Margin="5,1,5,1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="1*"/>
-                        <RowDefinition Height="1*"/>
-                        <RowDefinition Height="1*"/>
-                    </Grid.RowDefinitions>
-                    <TextBlock Name="txtEyePosX" Grid.Row="0" Background="Black" Foreground="White" Text="X"/>
-                    <TextBlock Name="txtEyePosY" Grid.Row="1" Background="Black" Foreground="White" Text="Y"/>
-                    <TextBlock Name="txtEyePosZ" Grid.Row="2" Background="Black" Foreground="White" Text="Z"/>
-                </Grid>
+                <Border Grid.Row ="6" BorderThickness="2" BorderBrush="White" Margin="5,1,5,1">
+                    <Grid Grid.Row="6">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Name="txtEyePosX" Grid.Row="0" Background="Black" Foreground="White" Text="X"/>
+                        <TextBlock Name="txtEyePosY" Grid.Row="1" Background="Black" Foreground="White" Text="Y"/>
+                        <TextBlock Name="txtEyePosZ" Grid.Row="2" Background="Black" Foreground="White" Text="Z"/>
+                    </Grid>
+                </Border>
+                
                 <!-- BUTTONS FOR TESTS -->
                 <!--Grid Grid.Row="6" Margin="5,1,5,1">
                     <Grid.ColumnDefinitions>
@@ -235,13 +238,13 @@
                 </Grid-->
                 
                 <!-- CALIBRATOR FOR EYECONTROL -->
-                <!--Border Grid.Row="7" BorderThickness="2" BorderBrush="WhiteSmoke" Width="Auto" Height="Auto" Margin="5,5,5,5">
+                <Border Grid.Row="7" BorderThickness="2" BorderBrush="WhiteSmoke" Width="Auto" Height="Auto" Margin="5,5,5,5">
                     <Button Name="btnCalibrateEyePos" Foreground="White" Content="Calibrate" Width="Auto" Height="Auto" FontFamily="Magneto" FontSize="22" IsCancel="True" MouseEnter="btnCalibrateEyePos_MouseEnter" MouseLeave="btnCalibrateEyePos_MouseLeave">
                         <Button.Background>
                             <SolidColorBrush Color="Black"></SolidColorBrush>
                         </Button.Background>
                     </Button>
-                </Border-->
+                </Border>
 
             </Grid>
         </Border>

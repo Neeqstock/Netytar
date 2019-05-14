@@ -104,7 +104,7 @@ namespace Netytar
                     txtIsBlowing.Text = "_";
                 }
 
-                /*
+                
                 try
                 {
                     txtEyePosX.Text = NetytarRack.DMIBox.EyeXModule.LastEyePosition.LeftEye.X.ToString();
@@ -115,7 +115,7 @@ namespace Netytar
                 {
 
                 }
-                */
+                
 
             }
         }
@@ -303,21 +303,24 @@ namespace Netytar
 
         }
 
-        /*
+        
         private void btnCalibrateEyePos_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
         {
             btnCalibrateEyePos.Background = new SolidColorBrush(Colors.LightGreen);
 
-            NetytarRack.DMIBox.EyePosBaseX = NetytarRack.DMIBox.EyeXModule.LastEyePosition.LeftEye.X;
-            NetytarRack.DMIBox.EyePosBaseY = NetytarRack.DMIBox.EyeXModule.LastEyePosition.LeftEye.Y;
-            NetytarRack.DMIBox.EyePosBaseZ = NetytarRack.DMIBox.EyeXModule.LastEyePosition.LeftEye.Z;
-        }*/
+            if(NetytarRack.DMIBox.EyeXModule.LastEyePosition != null)
+            {
+                NetytarRack.DMIBox.EyePosBaseX = NetytarRack.DMIBox.EyeXModule.LastEyePosition.LeftEye.X;
+                NetytarRack.DMIBox.EyePosBaseY = NetytarRack.DMIBox.EyeXModule.LastEyePosition.LeftEye.Y;
+                NetytarRack.DMIBox.EyePosBaseZ = NetytarRack.DMIBox.EyeXModule.LastEyePosition.LeftEye.Z;
+            }
+        }
 
-        /*
+        
         private void btnCalibrateEyePos_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
         {
             btnCalibrateEyePos.Background = new SolidColorBrush(Colors.Black);
-        }*/
+        }
 
         private void btnTestClick(object sender, RoutedEventArgs e)
         {

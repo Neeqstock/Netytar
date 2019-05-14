@@ -1,7 +1,7 @@
 Device
  DeviceName: \\?\HID#Tobii#8&842c075&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
  DeviceType: HID
- DeviceHandle: CAF08FB
+ DeviceHandle: 100B5
  Name: Tobii Eye Tracker HID
 
 DeviceInfo

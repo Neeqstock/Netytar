@@ -70,3 +70,4 @@ C:\root_X542U\Frammenti software\Visual Studio Projects\Netytar\Netytar\bin\Debu
 C:\root_X542U\Frammenti software\Visual Studio Projects\Netytar\Netytar\bin\Debug\NLog.xml
 C:\root_X542U\Frammenti software\Visual Studio Projects\Netytar\Netytar\bin\Debug\RJCP.SerialPortStream.pdb
 C:\root_X542U\Frammenti software\Visual Studio Projects\Netytar\Netytar\bin\Debug\RJCP.SerialPortStream.xml
+C:\root_X542U\Frammenti software\Visual Studio Projects\Netytar\Netytar\bin\Debug\AnyCPU\Tobii.EyeX.Client.dll
