@@ -1,0 +1,19 @@
+C:\root_X542U\Frammenti software\Visual Studio Projects\Libraries\rawinput latest\RawInput\bin\Debug\RawInput.dll
+C:\root_X542U\Frammenti software\Visual Studio Projects\Libraries\rawinput latest\RawInput\bin\Debug\RawInput.pdb
+C:\root_X542U\Frammenti software\Visual Studio Projects\Libraries\rawinput latest\RawInput\obj\Debug\RawInput.csprojAssemblyReference.cache
+C:\root_X542U\Frammenti software\Visual Studio Projects\Libraries\rawinput latest\RawInput\obj\Debug\RawInput.csproj.CoreCompileInputs.cache
+C:\root_X542U\Frammenti software\Visual Studio Projects\Libraries\rawinput latest\RawInput\obj\Debug\RawInput.dll
+C:\root_X542U\Frammenti software\Visual Studio Projects\Libraries\rawinput latest\RawInput\obj\Debug\RawInput.pdb
+C:\root_X542U\Frammenti software\Visual Studio Projects\Libraries\rawinput latest\RawInput\bin\Debug\NAudio.dll
+C:\root_X542U\Frammenti software\Visual Studio Projects\Libraries\rawinput latest\RawInput\bin\Debug\Sanford.Multimedia.Midi.dll
+C:\root_X542U\Frammenti software\Visual Studio Projects\Libraries\rawinput latest\RawInput\bin\Debug\NAudio.xml
+C:\root_X542U\Frammenti software\Visual Studio Projects\Libraries\rawinput latest\RawInput\bin\Debug\Sanford.Multimedia.Midi.pdb
+C:\root_X542U\Frammenti software\Visual Studio Projects\Libraries\rawinput latest\RawInput\bin\Debug\Sanford.Multimedia.Midi.xml
+C:\root_X542U\Frammenti software\Visual Studio Projects\Libraries\rawinput latest\RawInput\obj\Debug\RawInput.csproj.CopyComplete
+C:\root_X542U\Frammenti software\Visual Studio Projects\Netytar\NeeqDMIs\Libraries\RawInput\bin\Debug\RawInput.dll
+C:\root_X542U\Frammenti software\Visual Studio Projects\Netytar\NeeqDMIs\Libraries\RawInput\bin\Debug\RawInput.pdb
+C:\root_X542U\Frammenti software\Visual Studio Projects\Netytar\NeeqDMIs\Libraries\RawInput\obj\Debug\RawInput.csprojAssemblyReference.cache
+C:\root_X542U\Frammenti software\Visual Studio Projects\Netytar\NeeqDMIs\Libraries\RawInput\obj\Debug\RawInput.csproj.CoreCompileInputs.cache
+C:\root_X542U\Frammenti software\Visual Studio Projects\Netytar\NeeqDMIs\Libraries\RawInput\obj\Debug\RawInput.csproj.CopyComplete
+C:\root_X542U\Frammenti software\Visual Studio Projects\Netytar\NeeqDMIs\Libraries\RawInput\obj\Debug\RawInput.dll
+C:\root_X542U\Frammenti software\Visual Studio Projects\Netytar\NeeqDMIs\Libraries\RawInput\obj\Debug\RawInput.pdb

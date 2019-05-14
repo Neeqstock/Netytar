@@ -1,0 +1,12 @@
+C:\root_X542U\Frammenti software\Visual Studio Projects\Libraries\rawinput latest\RawInput\bin\x64\Debug\RawInput.dll
+C:\root_X542U\Frammenti software\Visual Studio Projects\Libraries\rawinput latest\RawInput\bin\x64\Debug\RawInput.pdb
+C:\root_X542U\Frammenti software\Visual Studio Projects\Libraries\rawinput latest\RawInput\bin\x64\Debug\NAudio.dll
+C:\root_X542U\Frammenti software\Visual Studio Projects\Libraries\rawinput latest\RawInput\bin\x64\Debug\Sanford.Multimedia.Midi.dll
+C:\root_X542U\Frammenti software\Visual Studio Projects\Libraries\rawinput latest\RawInput\bin\x64\Debug\NAudio.xml
+C:\root_X542U\Frammenti software\Visual Studio Projects\Libraries\rawinput latest\RawInput\bin\x64\Debug\Sanford.Multimedia.Midi.pdb
+C:\root_X542U\Frammenti software\Visual Studio Projects\Libraries\rawinput latest\RawInput\bin\x64\Debug\Sanford.Multimedia.Midi.xml
+C:\root_X542U\Frammenti software\Visual Studio Projects\Libraries\rawinput latest\RawInput\obj\x64\Debug\RawInput.csprojAssemblyReference.cache
+C:\root_X542U\Frammenti software\Visual Studio Projects\Libraries\rawinput latest\RawInput\obj\x64\Debug\RawInput.csproj.CoreCompileInputs.cache
+C:\root_X542U\Frammenti software\Visual Studio Projects\Libraries\rawinput latest\RawInput\obj\x64\Debug\RawInput.csproj.CopyComplete
+C:\root_X542U\Frammenti software\Visual Studio Projects\Libraries\rawinput latest\RawInput\obj\x64\Debug\RawInput.dll
+C:\root_X542U\Frammenti software\Visual Studio Projects\Libraries\rawinput latest\RawInput\obj\x64\Debug\RawInput.pdb
