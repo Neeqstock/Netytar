@@ -146,6 +146,50 @@ namespace Netytar
             btnStart.Foreground = new SolidColorBrush(Colors.Black);
 
             CheckMidiPort();
+
+            breathSensorValue = 0;
+
+            UpdateIndicators();
+        }
+
+        private void UpdateIndicators()
+        {
+            switch (NetytarRack.DMIBox.NetytarControlMode)
+            {
+                case NetytarControlModes.BreathSensor:
+                    indCtrlKeyboard.Background = BlankBrush;
+                    indCtrlBreath.Background = ActiveBrush;
+                    indCtrlEyePos.Background = BlankBrush;
+                    break;
+                case NetytarControlModes.EyePos:
+                    indCtrlKeyboard.Background = BlankBrush;
+                    indCtrlBreath.Background = BlankBrush;
+                    indCtrlEyePos.Background = ActiveBrush;
+                    break;
+                case NetytarControlModes.Keyboard:
+                    indCtrlKeyboard.Background = ActiveBrush;
+                    indCtrlBreath.Background = BlankBrush;
+                    indCtrlEyePos.Background = BlankBrush;
+                    break;
+            }
+            switch (NetytarRack.DMIBox.ModulationControlMode)
+            {
+                case ModulationControlModes.On:
+                    indModulationControl.Background = ActiveBrush;
+                    break;
+                case ModulationControlModes.Off:
+                    indModulationControl.Background = BlankBrush;
+                    break;
+            }
+            switch (NetytarRack.DMIBox.BreathControlMode)
+            {
+                case BreathControlModes.Switch:
+                    indBreathSwitch.Background = ActiveBrush;
+                    break;
+                case BreathControlModes.Dynamic:
+                    indBreathSwitch.Background = BlankBrush;
+                    break;
+            }
         }
 
         private void CheckMidiPort()
@@ -252,11 +296,12 @@ namespace Netytar
         {
             if (NetytarStarted)
             {
-                indCtrlKeyboard.Background = ActiveBrush;
-                indCtrlBreath.Background = BlankBrush;
-                indCtrlEyePos.Background = BlankBrush;
-
                 NetytarRack.DMIBox.NetytarControlMode = NetytarControlModes.Keyboard;
+                NetytarRack.DMIBox.ResetModulationAndPressure();
+
+                breathSensorValue = 0;
+
+                UpdateIndicators();
             }
         }
 
@@ -264,11 +309,12 @@ namespace Netytar
         {
             if (NetytarStarted)
             {
-                indCtrlKeyboard.Background = BlankBrush;
-                indCtrlBreath.Background = ActiveBrush;
-                indCtrlEyePos.Background = BlankBrush;
-
                 NetytarRack.DMIBox.NetytarControlMode = NetytarControlModes.BreathSensor;
+                NetytarRack.DMIBox.ResetModulationAndPressure();
+
+                breathSensorValue = 0;
+
+                UpdateIndicators();
             }
         }
 
@@ -314,11 +360,12 @@ namespace Netytar
         {
             if (NetytarStarted)
             {
-                indCtrlKeyboard.Background = BlankBrush;
-                indCtrlBreath.Background = BlankBrush;
-                indCtrlEyePos.Background = ActiveBrush;
-
                 NetytarRack.DMIBox.NetytarControlMode = NetytarControlModes.EyePos;
+                NetytarRack.DMIBox.ResetModulationAndPressure();
+
+                breathSensorValue = 0;
+
+                UpdateIndicators();
             }
         }
 
@@ -329,7 +376,7 @@ namespace Netytar
 
         }
 
-        /*
+        
         private void btnCalibrateEyePos_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
         {
             if (NetytarStarted)
@@ -349,7 +396,7 @@ namespace Netytar
         private void btnCalibrateEyePos_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
         {
             btnCalibrateEyePos.Background = new SolidColorBrush(Colors.Black);
-        }*/
+        }
 
         private void btnTestClick(object sender, RoutedEventArgs e)
         {
@@ -357,6 +404,44 @@ namespace Netytar
             {
                 System.Windows.MessageBox.Show(NetytarRack.DMIBox.EyePosBaseY + "    " + NetytarRack.DMIBox.EyeXModule.LastEyePosition.LeftEye.Y + "      " + (float)(NetytarRack.DMIBox.EyeXModule.LastEyePosition.LeftEye.Y - NetytarRack.DMIBox.EyePosBaseY));
             }
+        }
+
+        private void btnModulationControlSwitch_Click(object sender, RoutedEventArgs e)
+        {
+            if (NetytarStarted)
+            {
+                if (NetytarRack.DMIBox.ModulationControlMode == ModulationControlModes.Off)
+                {
+                    NetytarRack.DMIBox.ModulationControlMode = ModulationControlModes.On;
+                }
+                else if (NetytarRack.DMIBox.ModulationControlMode == ModulationControlModes.On)
+                {
+                    NetytarRack.DMIBox.ModulationControlMode = ModulationControlModes.Off;
+                }
+            }
+
+            breathSensorValue = 0;
+
+            UpdateIndicators();
+        }
+
+        private void btnBreathControlSwitch_Click(object sender, RoutedEventArgs e)
+        {
+            if (NetytarStarted)
+            {
+                if (NetytarRack.DMIBox.BreathControlMode == BreathControlModes.Switch)
+                {
+                    NetytarRack.DMIBox.BreathControlMode = BreathControlModes.Dynamic;
+                }
+                else if (NetytarRack.DMIBox.BreathControlMode == BreathControlModes.Dynamic)
+                {
+                    NetytarRack.DMIBox.BreathControlMode = BreathControlModes.Switch;
+                }
+            }
+
+            breathSensorValue = 0;
+
+            UpdateIndicators();
         }
     }
 }

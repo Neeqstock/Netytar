@@ -36,7 +36,7 @@
                     <RowDefinition Height="59*"/>
                 </Grid.RowDefinitions>
 
-                
+
                 <!-- START AND BLOWMETER -->
                 <Grid Grid.Row="0">
                     <Grid.ColumnDefinitions>
@@ -82,7 +82,7 @@
                     <ListBox x:Name="lstScaleChanger" Grid.Column="0" Margin="5,5,5,5" BorderThickness="2" BorderBrush="WhiteSmoke" Width="Auto" Height="Auto" SelectionChanged="LstScaleChanger_SelectionChanged" Background="Black" Foreground="WhiteSmoke"/>
                 </Grid>
 
-                
+
                 <!-- CONTROL SELECTORS -->
                 <Grid Grid.Row="2" Margin="10,10,10,10">
                     <Grid.ColumnDefinitions>
@@ -145,7 +145,7 @@
                     </Border>
                 </Grid>
 
-                
+
                 <!-- MIDI CHANNEL SELECTOR -->
                 <Grid Grid.Row="4" Margin="5,1,5,1">
                     <Grid.ColumnDefinitions>
@@ -172,7 +172,7 @@
                         </Button>
                     </Border>
                 </Grid>
-                
+
 
                 <!-- INDICATORS -->
                 <Grid Grid.Row="5" Margin="5,1,5,1">
@@ -193,6 +193,35 @@
                     </Border>
                 </Grid>
 
+                <!-- MODULATION AND SWITCHES-->
+                <Grid Grid.Row="6" Margin="10,10,10,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Button Name="btnModulationControlSwitch" Grid.Column="0" Grid.Row="0" BorderThickness="2" BorderBrush="White" Height="Auto" Width="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="btnModulationControlSwitch_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="Images/Backgrounds/MidWood.png" TileMode="Tile" Stretch="None"></ImageBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button Name="btnBreathControlSwitch" Grid.Column="0" Grid.Row="1" BorderThickness="2" BorderBrush="White" Height="Auto" Width="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="btnBreathControlSwitch_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="Images/Backgrounds/MidWood.png" TileMode="Tile" Stretch="None"></ImageBrush>
+                        </Button.Background>
+                    </Button>
+
+                    <Border Name="indModulationControl" Margin="4,0,0,0" Width="20" Height="20" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="0" BorderThickness="2" BorderBrush="White" Background="Black"/>
+                    <Border Name="indBreathSwitch" Margin="4,0,0,0" Width="20" Height="20" CornerRadius="10"  HorizontalAlignment="Left" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="1" BorderThickness="2" BorderBrush="White" Background="Black"/>
+
+                    <Label Margin="22,0,0,0" Grid.Column="1" Grid.Row="0" Foreground="White" Content="Mod" FontFamily="Magneto" FontSize="18"/>
+                    <Label Margin="22,0,0,0" Grid.Column="1" Grid.Row="1" Foreground="White" Content="BSwitch" FontFamily="Magneto" FontSize="18"/>
+
+                </Grid>
+
                 <!-- HEAD POSITION LABELS -->
                 <!--Border Grid.Row ="6" BorderThickness="2" BorderBrush="White" Margin="5,1,5,1">
                     <Grid Grid.Row="6">
@@ -206,7 +235,7 @@
                         <TextBlock Name="txtEyePosZ" Grid.Row="2" Background="Black" Foreground="White" Text="Z"/>
                     </Grid>
                 </Border-->
-                
+
                 <!-- BUTTONS FOR TESTS -->
                 <!--Grid Grid.Row="6" Margin="5,1,5,1">
                     <Grid.ColumnDefinitions>
@@ -229,16 +258,16 @@
                         </Button>
                     </Border>
                 </Grid-->
-                
-                
+
+
                 <!-- CALIBRATOR FOR EYECONTROL -->
-                <!--Grid Grid.Row="7" Margin="5,1,5,1">
+                <Grid Grid.Row="7" Margin="5,1,5,1">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="1*"/>
                         <ColumnDefinition Width="1*"/>
                     </Grid.ColumnDefinitions>
                     <Border Grid.Column="0" BorderThickness="2" BorderBrush="WhiteSmoke" Width="Auto" Height="Auto" >
-                        <Button Name="btnCalibrateEyePos" Foreground="White" Content="Calibrate" Width="Auto" Height="Auto" FontFamily="Magneto" FontSize="22" IsCancel="True" MouseEnter="btnCalibrateEyePos_MouseEnter" MouseLeave="btnCalibrateEyePos_MouseLeave">
+                        <Button Name="btnCalibrateEyePos" Foreground="White" Content="" Width="Auto" Height="Auto" FontFamily="Magneto" FontSize="22" IsCancel="True" MouseEnter="btnCalibrateEyePos_MouseEnter" MouseLeave="btnCalibrateEyePos_MouseLeave">
                             <Button.Background>
                                 <SolidColorBrush Color="Black"></SolidColorBrush>
                             </Button.Background>
@@ -251,7 +280,7 @@
                             </Button.Background>
                         </Button>
                     </Border>
-                </-->
+                </Grid>
 
             </Grid>
         </Border>

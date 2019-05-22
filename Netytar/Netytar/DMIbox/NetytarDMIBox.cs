@@ -15,7 +15,11 @@ namespace Netytar
         public MainWindow NetytarMainWindow { get => netytarMainWindow; set => netytarMainWindow = value; }
 
         private NetytarControlModes netytarControlMode = NetytarControlModes.Keyboard;
-        public NetytarControlModes NetytarControlMode { get => netytarControlMode; set => netytarControlMode = value; }
+        public NetytarControlModes NetytarControlMode { get => netytarControlMode; set { netytarControlMode = value; ResetModulationAndPressure(); } }
+        private ModulationControlModes modulationControlMode = ModulationControlModes.On;
+        public ModulationControlModes ModulationControlMode { get => modulationControlMode; set { modulationControlMode = value; ResetModulationAndPressure(); } }
+        private BreathControlModes breathControlMode = BreathControlModes.Dynamic;
+        public BreathControlModes BreathControlMode { get => breathControlMode; set { breathControlMode = value; ResetModulationAndPressure(); } }
 
         private Button lastGazedButton = new Button();
         public Button LastGazedButton { get => lastGazedButton; set => lastGazedButton = value; }
@@ -28,6 +32,14 @@ namespace Netytar
         private int pressure = 127;
         private int modulation = 0;
         private MidiNotes selectedNote = MidiNotes.C5;
+
+        public void ResetModulationAndPressure()
+        {
+            Blow = false;
+            Modulation = 0;
+            Pressure = 127;
+            Velocity = 127;
+        }
 
         public bool Blow
         {
@@ -54,19 +66,31 @@ namespace Netytar
             get { return pressure; }
             set
             {
-                if (value < 50)
+                if(BreathControlMode == BreathControlModes.Dynamic)
                 {
-                    pressure = 50;
+                    if (value < 50 && value > 1)
+                    {
+                        pressure = 50;
+                    }
+                    else if (value > 127)
+                    {
+                        pressure = 127;
+                    }
+                    else if (value == 0)
+                    {
+                        pressure = 0;
+                    }
+                    else
+                    {
+                        pressure = value;
+                    }
+                    SetPressure();
                 }
-                else if (value > 127)
+                if(BreathControlMode == BreathControlModes.Switch)
                 {
                     pressure = 127;
+                    SetPressure();
                 }
-                else
-                {
-                    pressure = value;
-                }
-                SetPressure();
             }
         }
         public int Modulation
@@ -74,19 +98,31 @@ namespace Netytar
             get { return modulation; }
             set
             {
-                if (value < 50)
+                if(ModulationControlMode == ModulationControlModes.On)
                 {
-                    modulation = 50;
+                    if (value < 50 && value > 1)
+                    {
+                        modulation = 50;
+                    }
+                    else if (value > 127)
+                    {
+                        modulation = 127;
+                    }
+                    else if (value == 0)
+                    {
+                        modulation = 0;
+                    }
+                    else
+                    {
+                        modulation = value;
+                    }
+                    SetModulation();
                 }
-                else if (value > 127)
+                else if (ModulationControlMode == ModulationControlModes.Off)
                 {
-                    modulation = 127;
+                    modulation = 0;
+                    SetModulation();
                 }
-                else
-                {
-                    modulation = value;
-                }
-                SetModulation();
             }
         }
 
@@ -193,5 +229,17 @@ namespace Netytar
         Keyboard,
         BreathSensor,
         EyePos
+    }
+
+    public enum ModulationControlModes
+    {
+        On,
+        Off
+    }
+
+    public enum BreathControlModes
+    {
+        Dynamic,
+        Switch
     }
 }
