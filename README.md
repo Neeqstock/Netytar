@@ -67,24 +67,72 @@ Launch Netytar. You can find the executable in the folder *Netytar/Netytar/bin/d
 
 Press the "Start" button to draw the surface and start Netytar.
 
+__**IMPORTANT: Press left CTRL key to "lock" and activate the eye tracker to the surface.**__
+
 ### Interface
 
-![rm_line1](C:\Users\neequ\Documents\GitHub\Netytar\Images\rm_line1.png)
+![Keys surface](https://raw.githubusercontent.com/Neeqstock/Netytar/master/Images/rm_surface.png) 
 
-![rm_com](C:\Users\neequ\Documents\GitHub\Netytar\Images\rm_com.png)
+**Keys surface**. Notes on scale are drawn with  dots and different colors. The red one is always the root note. A red line indicates a major scale, while a blue line indicates a minor scale. Off-scale notes do not have a colored dot around. Moving around with the gaze will cause the selected key to flash and a white line to appear and disappear, showing the gaze trace. Also, the surface will automatically scroll to put the selected note on the center of the screen.
 
-![rm_dynamics](C:\Users\neequ\Documents\GitHub\Netytar\Images\rm_dynamics.png)
+![Start and Exit buttons](https://raw.githubusercontent.com/Neeqstock/Netytar/master/Images/rm_line1.png) 
 
-![rm_eyeposcal](C:\Users\neequ\Documents\GitHub\Netytar\Images\rm_eyeposcal.png)
+**Start and Exit buttons**. These two buttons are used to draw the Netytar surface and exit the program.
 
-![rm_midiport](C:\Users\neequ\Documents\GitHub\Netytar\Images\rm_midiport.png)
+ ![Scale selector](https://raw.githubusercontent.com/Neeqstock/Netytar/master/Images/rm_scale.png)
 
-![rm_noteinfo](C:\Users\neequ\Documents\GitHub\Netytar\Images\rm_noteinfo.png)
+**Scale selector.** This can be used to select different scales to be drawn. IMPORTANT: The same thing can be done using only the eyes, keeping one eye closed for approx. one second while looking at one key. Closing the left eye a major scale will be drawn, while closing the right eye a minor scale will appear, both having the selected key as root note.
 
-![rm_scale](C:\Users\neequ\Documents\GitHub\Netytar\Images\rm_scale.png)
+![Dynamics bar](https://raw.githubusercontent.com/Neeqstock/Netytar/master/Images/rm_dynamics.png) 
 
-![rm_sensor](C:\Users\neequ\Documents\GitHub\Netytar\Images\rm_sensor.png)
+**Dynamics bar**. This bar indicates how much pressure you're applying on the sensor. This will result in a change of velocity (or pressure control change, if a note is actually being played). The white horizontal line indicates maximum velocity (127). The threshold between silence and a note being played is something between zero and that horizontal line.
 
-![rm_soundmods](C:\Users\neequ\Documents\GitHub\Netytar\Images\rm_soundmods.png)
+![Sensor selector](https://raw.githubusercontent.com/Neeqstock/Netytar/master/Images/rm_sensor.png) 
 
-![rm_surface](C:\Users\neequ\Documents\GitHub\Netytar\Images\rm_surface.png)
+**Sensor selector.** This selector can be used to choose which sensor you're using to play.
+
+* **Keyboard** activates the *spacebar* button to play (NoteOns and NoteOffs);
+* **Breath** activates the USB breath sensor. Instructions to build it with Arduino will be included in this readme file;
+* **EyePos** activates an *experimental* mode in which the player can use his/her 3D eye position to control sound dynamics and note execution. Still experimental, keep in mind.
+
+![COM selector](https://raw.githubusercontent.com/Neeqstock/Netytar/master/Images/rm_com.png) 
+
+**COM selector.** This can be used to select the USB port where the breath sensor is connected to. A green text indicates that a serial connection is initialized. A red one, that nothing is attached to that port, or no serial data is being received.
+
+![MIDI port selector](https://raw.githubusercontent.com/Neeqstock/Netytar/master/Images/rm_midiport.png) 
+
+**MIDI port selector.** Used to select different MIDI port/devices. Netytar will always send messages on channel 1 of that port. Text should become green when the MIDI port is initialized, but that's still buggy. :( Don't trust red texts.
+
+![Note informations panel](https://raw.githubusercontent.com/Neeqstock/Netytar/master/Images/rm_noteinfo.png) 
+
+**Note informations panel**. From left to right: MIDI pitch and name of the currently selected key, and sound indicator. A "B" (blowing) indicates that some note is being played, while a "_" indicates that the instrument is silent.
+
+![Control options](https://raw.githubusercontent.com/Neeqstock/Netytar/master/Images/rm_soundmods.png)  
+
+**Control options.** "Mod" activates modulation control. The more pressure from the breath controller, the more vibrato it will add. "BSwitch" can be used to control key-based instruments like piano: the breath sensor will become a simple on/off switch, ignoring pressure dynamics.
+
+![Eye position calibrator](https://raw.githubusercontent.com/Neeqstock/Netytar/master/Images/rm_eyeposcal.png) 
+
+**Eye position calibration.** This must be used with the "EyePos" playing mode. Looking at the black area will cause Netytar to register the current 3D height of the eyes as the "silence" position. Raising the head over that threshold while looking at the keys surface will cause the dynamics bar to raise.
+
+## Other features
+
+**Blink.** Blinking both eyes while playing a note will cause the same note to be repeated. It's the same as releasing and pressing again a piano button.
+
+## Contacts and other infos
+
+Please contact me for any question, feature request, collaboration proposal, problem report, etc.
+
+My email address is *nicola {-dot-} davanzo {-at-} unimi {-dot-} it*
+
+I am currently a PhD student in Laboratorio di Informatica Musicale, in University of Milan (Italy).
+
+I will be very happy if someone helps me in developing and maintaining this software. It was written using Visual Studio 2017, and it's completely Open Source (released under GNU GPL 3.0 license, which you will find in the "license" file).
+
+I will include as soon as possible the instructions to build a (very cheap [30€] but very effective) breath controlled switch using Arduino, which I'm currently using for demonstrations and stuff.
+
+
+
+Enjoy!
+
+Nicola
