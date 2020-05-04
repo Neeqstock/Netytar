@@ -67,7 +67,7 @@ Launch Netytar. You can find the executable in the folder *Netytar/Netytar/bin/d
 
 Press the "Start" button to draw the surface and start Netytar.
 
-__**IMPORTANT: Press left CTRL key to "lock" and activate the eye tracker to the surface.**__
+__**IMPORTANT: Press left CTRL key to activate the eye tracker and the autscrolling function: the mouse cursor will disappear. Press left SHIFT key to revert and set the cursor visible again.**__
 
 ### Interface
 
