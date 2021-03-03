@@ -4,7 +4,7 @@ using RawInputProcessor;
 
 namespace Netytar.DMIbox.KeyboardBehaviors
 {
-    class KBselectScale : AKeyboardBehavior
+    class KBselectScale : IKeyboardBehavior
     {
         private const VKeyCodes keyMaj = VKeyCodes.Add;
         private const VKeyCodes keyMin = VKeyCodes.Subtract;

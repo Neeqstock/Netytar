@@ -3,7 +3,7 @@ using RawInputProcessor;
 
 namespace Netytar
 {
-    public class KBsimulateBlow : AKeyboardBehavior
+    public class KBsimulateBlow : IKeyboardBehavior
     {
         private VKeyCodes keyBlow = VKeyCodes.Space;
 

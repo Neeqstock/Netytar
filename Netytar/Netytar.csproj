@@ -204,7 +204,7 @@
     <Folder Include="Controllers\Graphic\WickiEyeden\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NeeqDMIs\NeeqDMIs.csproj">
+    <ProjectReference Include="..\..\NeeqDMIs\NeeqDMIs.csproj">
       <Project>{5d8787ab-3ed2-4181-98ec-658814b19ae9}</Project>
       <Name>NeeqDMIs</Name>
     </ProjectReference>

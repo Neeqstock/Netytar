@@ -4,7 +4,7 @@ using System.Windows;
 
 namespace Netytar
 {
-    class KBemulateMouse : AKeyboardBehavior
+    class KBemulateMouse : IKeyboardBehavior
     {
         private VKeyCodes keyStartEmulate = VKeyCodes.Control;
         private VKeyCodes keyStopEmulate = VKeyCodes.Shift;
