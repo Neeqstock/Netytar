@@ -1,4 +1,4 @@
-﻿using NeeqDMIs.Eyetracking.Filters;
+﻿using NeeqDMIs.Eyetracking.PointFilters;
 using NeeqDMIs.Eyetracking.Tobii;
 using System;
 using System.Drawing;
@@ -19,7 +19,7 @@ namespace Netytar.DMIbox.TobiiBehaviors
         private double vel = 0;
         private double dir = 0;
 
-        private IFilter filter; // Filter to eliminate noise
+        private IPointFilter filter; // Filter to eliminate noise
         private System.Drawing.Point velPoint = new System.Drawing.Point();
 
         public double Niente
@@ -51,7 +51,7 @@ namespace Netytar.DMIbox.TobiiBehaviors
             this.onThresh = onThresh;
             this.sensitivity = sensitivity;
             this.maxVelocity = maxSwing;
-            filter = new ExpDecayingFilter(filterSensitivity);
+            filter = new PointFilterMAExpDecaying(filterSensitivity);
         }
 
 

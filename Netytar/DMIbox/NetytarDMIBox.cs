@@ -1,5 +1,6 @@
 ﻿using NeeqDMIs;
 using NeeqDMIs.ATmega;
+using NeeqDMIs.Keyboard;
 using NeeqDMIs.Music;
 using System.Windows.Controls;
 
@@ -12,6 +13,8 @@ namespace Netytar
     {
         public Eyetracker Eyetracker { get; set; } = Eyetracker.Tobii;
         public MainWindow NetytarMainWindow { get; set; }
+
+        public KeyboardModule KeyboardModule { get; set; }
 
         private string testString;
         public string TestString { get => testString; set => testString = value; }

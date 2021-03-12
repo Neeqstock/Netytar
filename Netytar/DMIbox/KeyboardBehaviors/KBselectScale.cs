@@ -9,7 +9,7 @@ namespace Netytar.DMIbox.KeyboardBehaviors
         private const VKeyCodes keyMaj = VKeyCodes.Add;
         private const VKeyCodes keyMin = VKeyCodes.Subtract;
 
-        public override int ReceiveEvent(RawInputEventArgs e)
+        public int ReceiveEvent(RawInputEventArgs e)
         {
             if (e.VirtualKey == (ushort)keyMaj && e.KeyPressState == KeyPressState.Down)
             {

@@ -1,5 +1,5 @@
 ﻿using MicroLibrary;
-using NeeqDMIs.Eyetracking.Filters;
+using NeeqDMIs.Eyetracking.PointFilters;
 using System;
 using System.Drawing;
 using System.Windows.Controls;
@@ -18,7 +18,7 @@ namespace Netytar
         private ScrollViewer scrollViewer;
         private int radiusThreshold;
         private int proportional;
-        private IFilter filter;
+        private IPointFilter filter;
         #endregion
 
         #region Scrollviewer params
@@ -42,7 +42,7 @@ namespace Netytar
             get { return enabled; }
             set { enabled = value; }
         }
-        public AutoScroller(ScrollViewer scrollViewer, int radiusThreshold, int proportional, IFilter filter)
+        public AutoScroller(ScrollViewer scrollViewer, int radiusThreshold, int proportional, IPointFilter filter)
         {
             this.radiusThreshold = radiusThreshold;
             this.filter = filter;

@@ -1,6 +1,6 @@
 ﻿using NeeqDMIs.ATmega;
 using NeeqDMIs.Eyetracking.Eyetribe;
-using NeeqDMIs.Eyetracking.Filters;
+using NeeqDMIs.Eyetracking.PointFilters;
 using NeeqDMIs.Eyetracking.Tobii;
 using NeeqDMIs.Eyetracking.Utils;
 using NeeqDMIs.Keyboard;
@@ -46,7 +46,7 @@ namespace Netytar.DMIbox
             {
                 Rack.DMIBox.EyeTribeModule = new EyeTribeModule();
                 Rack.DMIBox.EyeTribeModule.Start();
-                Rack.DMIBox.EyeTribeModule.MouseEmulator = new MouseEmulator(new NoFilter());
+                Rack.DMIBox.EyeTribeModule.MouseEmulator = new MouseEmulator(new PointFilterBypass());
                 Rack.DMIBox.EyeTribeModule.MouseEmulatorGazeMode = GazeMode.Raw;
             }
 
@@ -73,7 +73,7 @@ namespace Netytar.DMIbox
             IButtonsSettings buttonsSettings = new ButtonsSettingsInvert();
             NetytarSurfaceDrawModes drawMode = NetytarSurfaceDrawModes.AllLines;
 
-            Rack.DMIBox.AutoScroller = new AutoScroller(Rack.DMIBox.NetytarMainWindow.scrlNetytar, 0, 100, new ExpDecayingFilter(0.1f)); // OLD was 100, 0.1f
+            Rack.DMIBox.AutoScroller = new AutoScroller(Rack.DMIBox.NetytarMainWindow.scrlNetytar, 0, 100, new PointFilterMAExpDecaying(0.1f)); // OLD was 100, 0.1f
             Rack.DMIBox.NetytarSurface = new NetytarSurface(Rack.DMIBox.NetytarMainWindow.canvasNetytar, dimension, colorCode, buttonsSettings, drawMode);
             Rack.DMIBox.NetytarSurface.DrawButtons();
             Rack.DMIBox.NetytarSurface.Scale = ScalesFactory.Cmaj;

@@ -10,7 +10,7 @@ namespace Netytar
         private bool blowing = false;
         int returnVal = 0;
 
-        public override int ReceiveEvent(RawInputEventArgs e)
+        public int ReceiveEvent(RawInputEventArgs e)
         {
             returnVal = 0;
 
