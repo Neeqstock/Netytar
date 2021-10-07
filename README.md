@@ -2,6 +2,8 @@
 
 ---
 
+**== DEPRECATED! THIS IS AN OLD VERSION OF NETYTAR. THE PROJECT HAS BEEN FORKED AND MOVED TO [A NEW REPOSITORY](https://github.com/LIMUNIMI/Netytar) ==**
+
 Netytar is a Virtual Digital Musical Instrument (Virtual DMI) specially designed to be played without hands, using an eye tracker sensor, and possibly some extra sensors. It's designed for accessibility, especially for people who cannot use/control their hands in order to play music.
 
 The first version was produced as part of my Master Thesis to get the degree in Computer Engineering at University of Pavia (Italy), in 2018, and tested with able-bodied musicians.
