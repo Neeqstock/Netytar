@@ -8,28 +8,6 @@ Netytar is a Virtual Digital Musical Instrument (Virtual DMI) specially designed
 
 The first version was produced as part of my Master Thesis to get the degree in Computer Engineering at University of Pavia (Italy), in 2018, and tested with able-bodied musicians.
 
-## Netytar and The EyeHarp
-
-In February 2018, when I presented Netytar as a Master Thesis, the only comparable alternative to Netytar was [The EyeHarp](http://theeyeharp.org/). Developed by Zacharias Vamvakousis at Pompeu Fabra University (Barcelona, Spain), it's a Virtual DMI, fully operable using an eye tracker or any other sensor able to control a cursor on screen.
-
-A scientific paper was dedicated to The EyeHarp: *Vamvakousis, Zacharias & Ramirez, Rafael. (2016). The EyeHarp: A Gaze-Controlled Digital Musical Instrument. Frontiers in Psychology. 7. DOI: 10.3389/fpsyg.2016.00906.* 
-
-Although The EyeHarp is a great instrument, complete and full of features, Netytar was designed as an alternative. The main differences are:
-
-* **Less control latency**. Due to the way the Netytar interface was designed, it was not necessary to introduce gaze filters, typical of various applications based on gaze interaction (including The EyeHarp). These filters introduce delays, potentially harmful for the musical performance.
-* **Different interface**. As like as The EyeHarp Netytar's *note layout* is specifically designed for gaze interaction. It is not inspired by any "conventional" musical instrument. The major peculiarities of the Netytar interface are:
-  * **It's isomporphic!** It follows a specific rule that makes invariant to transposition. In other words, any sequence of notes (a song or a musical phrase) has the same "geometric shape" regardless of the key in which it is played. Isomorphic layouts are easy to learn!
-  * **The surface's dimension is potentially unlimited.** Its dimension is now limited due to performance factors, but due to the "auto-scrolling" function, which exploits the smooth-pursuit capabilities of our eyes, there could be no limit to the number of keys on its "surface", regardless to the computer screen dimensions. Moreover, adding more keys into the surface does not make them smaller.
-  * **More than one "path" for the same sequence**. Since there are multiple keys mapped to the same note, there are multiple ways to play the same sequence: the performer can find the most comfortable for himself. The same happens in stringed instruments, like guitar and bass.
-  * **Use of color**. It uses high contrast colors in order to exploit our peripheral vision's capabilities.
-* **Hybrid interaction.** Differently from The EyeHarp, which is fully operable using gaze interaction, Netytar is designed to work with (and requires) an additional sensor, other than the eye tracker. This can be a keyboard button (for able bodied musicians) or a breath sensor (instruction to build a simple one with Arduino will be included there!). I'm continuously integrating new sensors as part of my PhD project (EMG, a "bite operated sensor" and head tracking are coming next). Some of these can be used also to control the note dynamics.
-
-A comparison on these and some other aspects between Netytar and The EyeHarp was published as a research paper: 
-
-*Nicola Davanzo, Piercarlo Dondi, Mauro Mosconi, and Marco Porta. 2018. Playing music with the eyes through an isomorphic interface. In Proceedings of the Workshop on Communication by Gaze Interaction (COGAIN '18). ACM, New York, NY, USA, Article 5, 5 pages. DOI: https://doi.org/10.1145/3206343.3206350*
-
-I personally think it's good to have alternatives in the same application field. Netytar is *not* meant to be better than The EyeHarp. It could be the same as saying that guitar is better than piano. I like the fact that a musician can select between alternatives: probably there are some features in which The EyeHarp excels, some other in which Netytar does.
-
 ## Hardware Requirements
 
 In order to install and play Netytar, you need the following stuff:
